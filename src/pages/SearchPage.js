@@ -1,5 +1,6 @@
 import React from 'react';
 import './SearchPage.css';
+// import '../index.scss';
 import Search from '../components/Search';
 import { useStateValue } from '../StateProvider';
 import useGoogleSearch from '../useGoogleSearch';
@@ -16,8 +17,8 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
   //Live API call
-    const { data } = useGoogleSearch(term);
-//   const data = Response;
+    // const { data } = useGoogleSearch(term);
+  const data = Response;
   console.log(data);
 
   return (
@@ -28,7 +29,7 @@ function SearchPage() {
         </Link>
 
         <div className='searchPage__headerBody'>
-          <Search hideButtons />
+          <Search hideButtons className="form"/>
           <div className='searchPage__options'>
             <div className='searchPage__optionsL'>
               <div className='searchPage__option'>
@@ -74,7 +75,7 @@ function SearchPage() {
         </div>
       </div>
 
-      {term && (
+      {true && (
         <div className='searchPage__results'>
           <p className='searchPage__resultCount'>
             About {data?.searchInformation.formattedTotalResults} Results (

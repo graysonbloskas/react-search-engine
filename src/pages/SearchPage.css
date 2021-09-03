@@ -94,3 +94,50 @@
     text-decoration: none;
     color: black;
 }
+
+@media screen and (max-width:700px) {
+    .searchPage {
+        overflow: hidden;
+    }
+
+    .searchPage__header {
+        margin: auto !important;
+        flex-wrap: wrap;
+        top: -10px !important;
+    }
+
+    .searchPage__logo {
+        width: 50% !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        margin: 0 0 0 135px;
+        z-index: 2;
+    }
+
+    .searchPage__headerBody {
+        margin: 0 !important;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 350px;
+        margin-left: 45px;
+        align-items: center;
+    }
+
+    .searchPage__results {
+        margin: auto !important;
+        padding: 10px;
+    }
+
+    .searchPage__result {
+        padding: 10px;
+    }
+
+    .searchPage__resultTitle {
+        font-size: 18px;
+    }
+}
