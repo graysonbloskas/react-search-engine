@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import AppsIcon from '@material-ui/icons/Apps';
 import { Avatar } from '@material-ui/core';
 import Logo from '../assets/images/not-google.png';
+import Search from '../components/Search'
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
 
       <div className='home__body'>
         <img src={Logo} alt='Logo' className='logo' />
+        <Search />
       </div>
     </div>
   );
