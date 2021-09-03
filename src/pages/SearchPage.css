@@ -6,11 +6,47 @@
     z-index: 100;
     align-items: flex-start;
     padding: 30px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgba(215, 215, 215, 0.414);
 }
 
 .searchPage__logo {
     object-fit: contain;
-    height: 50px;
+    height: 30px;
     margin-right: 50px;
+}
+
+.searchPage__headerBody > .search > .search__input {
+    margin-top: 0;
+    width: unset;
+    margin: unset;
+    max-width: unset;
+}
+
+.searchPage__options {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.searchPage__options a, .searchPage__optionsR a {
+    text-decoration: none;
+    color: gray;
+}
+
+.searchPage__optionsL, .searchPage__optionsR {
+    display: flex;
+}
+
+.searchPage__optionsR {
+    margin-left: 80px;
+}
+
+.searchPage__option {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.searchPage__option a {
+    margin-left: 5px;
 }
