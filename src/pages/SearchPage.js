@@ -18,8 +18,6 @@ function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
   // Live API call
     const { data } = useGoogleSearch(term);
-  // const data = Response;
-  console.log(data);
 
   return (
     <div className='searchPage'>
